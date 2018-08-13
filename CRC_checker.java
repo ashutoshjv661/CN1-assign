@@ -73,10 +73,10 @@ public class Crc {
 			{
 				System.out.println("Enter Position");
 				int pos= sc.nextInt();
-				if((var[pos])==1)
-					var[pos]=0;
+				if((var[pos-1])==1)
+					var[pos-1]=0;
 				else
-					var[pos]=1;
+					var[pos-1]=1;
 			}
 			System.out.println("\nRECEIVED CODEWORD\n ");
 			for(int i=0;i<tot_len;i++)
